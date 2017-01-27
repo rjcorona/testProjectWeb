@@ -8,4 +8,4 @@ before_script:
  - typings install
  - tsc
 
-script: npm tsc
+script: npm run tsc
