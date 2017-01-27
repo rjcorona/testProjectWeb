@@ -2,6 +2,12 @@ sudo: required
 language: node_js
 node_js:
   - '4.2'
+  
 before_script:
-- npm install
-script: npm start
+  - npm install
+  - npm i -g typescript typings
+  - typings install
+  - tsc
+-
+
+script: npm tsc
